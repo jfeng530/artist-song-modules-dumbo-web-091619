@@ -1,7 +1,7 @@
 module Findable
   
   def find_by_name(name)
-    self.all.find {|item| item.name == name}
-  end 
+    @@artists.detect{|a| a.name == name}
+  end
   
 end 
